@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="229.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gridproject.StartController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Slider fx:id="ss" layoutX="80.0" layoutY="81.0" onMouseDragged="#slided" onMousePressed="#sliderPressed" onMouseReleased="#sliderReleased" prefHeight="17.0" prefWidth="180.0" />
+      <Label fx:id="size" layoutX="276.0" layoutY="69.0" text="4">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="triangulate" layoutX="88.0" layoutY="147.0" mnemonicParsing="false" onAction="#createPolygon" prefHeight="60.0" prefWidth="164.0" text="Create Grid">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="69.0" layoutY="48.0" text="Number of Rows and Columns">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="-1.0" text="Programming Assignment 4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

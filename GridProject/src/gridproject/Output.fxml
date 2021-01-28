@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gridproject.OutputController">
+   <children>
+      <AnchorPane fx:id="gridPane" prefHeight="900.0" prefWidth="450.0">
+         <children>
+            <Canvas height="900.0" width="456.0" />
+            <Label layoutX="14.0" layoutY="14.0" text="Original Grid">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="13.0" layoutY="450.0" text="Inverted Grid">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="factPane" layoutX="456.0" layoutY="1.0" prefHeight="285.0" prefWidth="471.0">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="Row Permutation: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="77.0" text="Row Permutation Factoradic Number:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="134.0" text="Column Permutation: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="198.0" text="Column Permutation Factoradic Number: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="rowPerm" layoutX="18.0" layoutY="40.0" prefHeight="20.0" prefWidth="435.0" text="1    2    3    4    5    6    7    8    9    10    11    12">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="rowFact" layoutX="18.0" layoutY="103.0" prefHeight="20.0" prefWidth="435.0" text="1    2    3    4    5    6    7    8    9    10    11    12">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="colPerm" layoutX="22.0" layoutY="160.0" prefHeight="20.0" prefWidth="435.0" text="1    2    3    4    5    6    7    8    9    10    11    12">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="colFact" layoutX="22.0" layoutY="224.0" prefHeight="20.0" prefWidth="435.0" text="1    2    3    4    5    6    7    8    9    10    11    12">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="permPane" layoutX="456.0" layoutY="286.0" prefHeight="615.0" prefWidth="471.0">
+         <children>
+            <Canvas height="553.0" layoutX="11.0" layoutY="40.0" width="435.0" />
+            <Label layoutX="21.0" layoutY="21.0" text="Permutation Graph">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Label layoutX="33.0" layoutY="560.0" text="Column Permutation Edges" textFill="#e80000">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="533.0" text="Row Permutation Edges" textFill="#008d15">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tangPane" layoutX="938.0" layoutY="-2.0" prefHeight="900.0" prefWidth="357.0">
+         <children>
+            <Canvas height="900.0" width="368.0" />
+            <Label layoutY="3.0" text="Tangle">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="10.0" text="Row Permutation">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="876.0" text="Column Permutation">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="302.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" text="Back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
